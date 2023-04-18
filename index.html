@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário para DEVS</title>
+</head>
+<body>
+    <h1>Cadastro de DEVS</h1>
+    <h2>Complete de acordo com suas especificações</h2>
+
+    <form action="/processa-dados-do-form" method="get">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome">
+
+        <label for="sobrenome">Sobrenome</label>
+        <input type="text" id="sobrenome">
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email">
+
+        <p>De qual lado da aplicação você desenvolve?</p>
+        <input type="radio" name="opcao" value="frontend">Front-End
+        <br>
+        <input type="radio" name="opcao" value="backend">Back-End
+        <br>
+        <input type="radio" name="opcao" value="fullstack">Fullstack
+
+        <p>Senioridade</p>
+        <select name="selecionar" id="selecionar">
+            <option value="estagiario">Estagiário</option>
+            <option value="junior">Júnior</option>
+            <option value="pleno">Pleno</option>
+            <option value="senior">Sênior</option>
+        </select>
+
+        <p>Selecione as tecnologias que utiliza:</p>
+        <input type="checkbox">HTML
+        <input type="checkbox">CSS
+        <input type="checkbox">JavaScript
+        <input type="checkbox">PHP
+        <input type="checkbox">C#
+        <input type="checkbox">Python
+        <input type="checkbox">Java
+        <br>
+        <br>
+        <label for="descricao">Conte um pouco mais da sua experiência:</label>
+        <br>
+        <textarea name="descricao" id="descricao" cols="50" rows="10"></textarea>
+
+        <button type="reset">Enviar</button>
+    </form>
+        
+</body>
+</html>
